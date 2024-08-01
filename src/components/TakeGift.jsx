@@ -14,6 +14,8 @@ export const TakeGift = ({ showModal, onVideoEnd }) => {
               src={assets.takeGiftVideo}
               autoPlay={true}
               onEnded={onVideoEnd}
+              playsInline
+              muted
             ></video>
           )}
         </div>
