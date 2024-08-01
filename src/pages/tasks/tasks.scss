@@ -1,0 +1,47 @@
+.tasks-section {
+  padding: 51px 0 0 0;
+  .text {
+    padding-bottom: 48px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 13px 17px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    svg path {
+      fill: #00000080;
+    }
+    &.active {
+      background: #d53e76;
+      color: #fff;
+      path {
+        fill: #fff;
+      }
+    }
+
+    &.black {
+      color: #000;
+      path {
+        fill: #000;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.94px;
+      text-align: left;
+      max-width: 200px;
+    }
+    .right-img {
+      margin-left: auto;
+    }
+  }
+}
