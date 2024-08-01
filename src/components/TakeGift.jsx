@@ -7,7 +7,6 @@ export const TakeGift = ({ showModal, onVideoEnd }) => {
     <>
       <div className={`overlay ${showModal ? "show" : ""}`}></div>
       <div className={`take-gift__modal ${showModal ? "show" : ""}`}>
-        <Header />
         <div className="modal-content">
           {showModal && (
             <video

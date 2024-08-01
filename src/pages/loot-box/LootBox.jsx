@@ -64,7 +64,9 @@ export const LootBox = () => {
       <div className="loot-box container">
         <span className="content-text">Remained</span>
         <span className="content-text">1 912 000 / 2 000 000</span>
-        <img className="gift-box__img" src={assets.giftBox} alt="" />
+        <div className="gift-box">
+          <img className="gift-box__img" src={assets.giftBox} alt="" />
+        </div>
         <span className="content-text">
           To open the lootbox you need <br /> to fulfil a task
         </span>
