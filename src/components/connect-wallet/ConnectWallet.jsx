@@ -4,14 +4,21 @@ import { Avatar } from 'primereact/avatar';
 import assets from '../../assets';
 import { Button } from 'primereact/button';
 
-export const ConnectWallet = ({ showModal, handleNotFound }) => {
+export const ConnectWallet = ({
+  showModal,
+  handleNotFound,
+  toggleConnectWalletModal,
+}) => {
   return (
     <>
       <div className={`overlay ${showModal ? 'show' : ''}`}></div>
       <div className={`connect-wallet modal ${showModal ? 'show' : ''}`}>
         <div className="connect-wallet__header">
           <Avatar image={assets.avatar} size="large" shape="circle" />
-          <button className="connect-wallet__btn">
+          <button
+            className="connect-wallet__btn"
+            onClick={toggleConnectWalletModal}
+          >
             <img src={assets.wallet} alt="wallet" />
             <span>Connect wallet</span>
           </button>
