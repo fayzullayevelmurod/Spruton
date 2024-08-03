@@ -3,10 +3,27 @@ import './connect-wallet.scss';
 import { AvatarBox } from '../AvatarBox';
 import assets from '../../assets';
 import { Card } from 'primereact/card';
+import { Select } from '../Select';
 
 export const ConectedWallet = ({ showModal }) => {
+  const [selectWeek, setSelectWeek] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('DAY');
+
+  const handleShowSelect = () => {
+    setSelectWeek(!selectWeek);
+  };
+
+  const handleSelectOption = (option) => {
+    setSelectedOption(option);
+  };
+
   return (
     <>
+      <Select
+        selectWeek={selectWeek}
+        handleShowSelect={handleShowSelect}
+        onSelect={handleSelectOption}
+      />
       <div className={`overlay ${showModal ? 'show' : ''}`}></div>
       <div className={`conected-wallet modal ${showModal ? 'show' : ''}`}>
         <AvatarBox />
@@ -21,8 +38,8 @@ export const ConectedWallet = ({ showModal }) => {
 
         <div className="your-shops">
           <span className="your-shops__title">Your stores</span>
-          <button className="select-date">
-            <span>DAY</span>
+          <button className="select-date" onClick={handleShowSelect}>
+            <span>{selectedOption}</span>
             <img src={assets.uppDownArrow} alt="" />
           </button>
         </div>

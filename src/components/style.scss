@@ -166,3 +166,56 @@ footer {
     margin-top: auto;
   }
 }
+
+// custom select
+.custom-select {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 8px 34px 8px;
+  background: #00000066;
+  height: 100%;
+  z-index: 100;
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+
+  ul {
+    background: #fff;
+    border-radius: 14px;
+  }
+
+  li {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4300000071525574px;
+    text-align: center;
+    color: #1A4265;
+    border-bottom: 0.33px solid #3C3C435C;
+    padding: 17px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .cencle-btn {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.4300000071525574px;
+    text-align: center;
+    height: 56px;
+    color: #D53E76;
+    background: #fff;
+    border-radius: 14px;
+  }
+}
