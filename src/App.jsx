@@ -1,9 +1,9 @@
-import { Footer, Header } from "./components";
-import { AppRoutes } from "./routes";
+import { Footer, Header } from './components';
+import { AppRoutes } from './routes';
 
 function App() {
   return (
-    <div className="app">
+    <div className="wrapper">
       <Header />
       <AppRoutes />
       <Footer />

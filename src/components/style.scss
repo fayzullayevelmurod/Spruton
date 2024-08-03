@@ -5,6 +5,7 @@ header {
   justify-content: space-between;
   padding: 6px 0;
   font-family: "SF Pro", sans-serif;
+
   .prev-btn {
     padding: 11px 8px;
     display: flex;
@@ -20,9 +21,11 @@ header {
       font-size: 22px;
     }
   }
+
   .company-logo {
     text-align: center;
   }
+
   .company-name {
     font-size: 17px;
     font-weight: 590;
@@ -31,6 +34,7 @@ header {
     display: block;
     margin-bottom: 1px;
   }
+
   .company-status {
     font-family: "Roboto", sans-serif;
     font-size: 13px;
@@ -39,6 +43,7 @@ header {
     letter-spacing: 0.10000000149011612px;
     color: #707579;
   }
+
   .ellipsis-btn {
     width: 85px;
     height: 44px;
@@ -67,10 +72,12 @@ footer {
   .box {
     text-align: center;
     width: 48px;
+
     &.active {
       span {
         color: #1a4265;
       }
+
       svg path {
         fill: #1a4265;
       }
@@ -104,7 +111,8 @@ footer {
     display: block;
   }
 }
-.take-gift__modal {
+
+.modal {
   position: fixed;
   height: 98vh;
   border-radius: 20px 20px 0 0;
@@ -120,12 +128,41 @@ footer {
   &.show {
     transform: scaleY(1);
   }
+}
 
+.take-gift__modal {
   .modal-content {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -56px;
+  }
+}
+
+
+// not-found
+.not-found {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px 16px 75px 16px;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60.51px;
+    color: #D53E76;
+    margin-bottom: 18px;
+  }
+
+  button {
+    margin-top: auto;
+  }
+
+  .content-box {
+    margin-top: auto;
   }
 }
