@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import { LootBox, Tasks } from "./pages";
+import { Route, Routes } from 'react-router-dom';
+import { AddBox, LootBox, Tasks } from './pages';
 
 export const AppRoutes = () => (
   <Routes>
@@ -10,7 +10,7 @@ export const AppRoutes = () => (
 );
 
 const routes = [
-  { path: "/", element: <LootBox /> },
-  { path: "/tasks-section", element: <Tasks /> },
-  { path: "/tasks-section", element: <Tasks /> },
+  { path: '/', element: <LootBox /> },
+  { path: '/tasks-section', element: <Tasks /> },
+  { path: '/add-box', element: <AddBox /> },
 ];

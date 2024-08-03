@@ -14,7 +14,7 @@ export const LootBox = () => {
   const [takeGift, setTakeGift] = useState(false);
   const [connectWalletModal, setConnectWalletModal] = useState(false);
   const [showNotFound, setShowNotFound] = useState(false);
-  const [connectedWallet, setConnectedWallet] = useState(true);
+  const [connectedWallet, setConnectedWallet] = useState(false);
   const navigate = useNavigate();
 
   const toggleTakeGift = () => {

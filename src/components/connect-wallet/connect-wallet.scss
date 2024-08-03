@@ -61,34 +61,36 @@
     }
   }
 
-  .your-shops {
+
+
+}
+
+.your-shops {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #0E2539;
+  }
+
+  .select-date {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
+    gap: 2px;
 
-    &__title {
-      font-size: 22px;
-      font-weight: 600;
-      line-height: 30px;
-      color: #0E2539;
+    span {
+      font-family: 'SF Pro', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: normal;
+      color: #D53E76;
+      text-transform: uppercase;
     }
-
-    .select-date {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-
-      span {
-        font-family: 'SF Pro', sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: normal;
-        color: #D53E76;
-        text-transform: uppercase;
-      }
-    }
-
   }
 
 }

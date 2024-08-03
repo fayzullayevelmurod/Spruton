@@ -1,0 +1,115 @@
+.add-box__page {
+  padding: 16px 16px 72px 16px;
+  position: relative;
+
+  .your-shops {
+    margin: 20px 0;
+  }
+
+  .cards-box {
+    border-radius: 16px;
+    overflow: hidden;
+
+    .p-card {
+      border-radius: 0;
+    }
+
+    .p-card-body {
+      padding: 0;
+    }
+
+    .p-card-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: .5px solid #3C3C434A;
+      padding: 16px;
+    }
+
+    .left-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .img-box {
+      width: 93px;
+      height: 64px;
+      border-radius: 10px;
+      background: #707579;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .status {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #62CF50;
+
+      &.active {
+        background: #62CF50;
+      }
+
+      &.disabled {
+        background: #D2D2D2;
+      }
+    }
+
+    span {
+      display: block;
+    }
+
+    .box-number {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: left;
+      color: #0E2539;
+    }
+
+    .box-item,
+    .box-price {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15.73px;
+      color: #6D7882;
+    }
+
+    .card {
+
+      &.disabled {
+        .status {
+          background: #D2D2D2;
+        }
+
+        span {
+          color: #8F9BA6;
+        }
+
+        .img-box {
+          opacity: .6;
+          background: linear-gradient(0deg, #707579, #707579),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.63));
+        }
+      }
+
+      &:last-child {
+        .p-card-content {
+          border: none !important;
+        }
+      }
+    }
+
+  }
+
+  .add-box__btn {
+    width: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 78px;
+    margin: 0 auto;
+  }
+}
