@@ -147,3 +147,45 @@ button {
     color: #6D7882;
   }
 }
+
+/* tab menu */
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+  padding: 12px 0;
+  color: #8E8E92;
+  font-family: 'SF Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.052400000393390656px;
+  border: none;
+  position: relative;
+  border: none;
+  background: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.p-tabmenu-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  border: none;
+  background: transparent;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+  color: #000000;
+
+  &::before {
+    background: #D53E76;
+  }
+}

@@ -5,10 +5,16 @@ import assets from '../../assets';
 import { Select } from '../../components/Select';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
+import { CreateBox } from './CreateBox';
 
 export const AddBox = () => {
   const [selectWeek, setSelectWeek] = useState(false);
   const [selectedOption, setSelectedOption] = useState('DAY');
+  const [addedBox, setAddedBox] = useState(false);
+
+  const handleShowAddedBox = () => {
+    setAddedBox(!addedBox);
+  };
 
   const handleShowSelect = () => {
     setSelectWeek(!selectWeek);
@@ -19,6 +25,7 @@ export const AddBox = () => {
   };
   return (
     <>
+      <CreateBox showModal={addedBox} handleShowAddedBox={handleShowAddedBox} />
       <Select
         selectWeek={selectWeek}
         handleShowSelect={handleShowSelect}
@@ -309,6 +316,7 @@ export const AddBox = () => {
           className="go-btn add-box__btn"
           label="Add box"
           severity="help"
+          onClick={handleShowAddedBox}
         />
       </div>
     </>

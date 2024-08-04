@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
-import assets from "../assets";
-import { useState } from "react";
+import { Link, useLocation } from 'react-router-dom';
+import assets from '../assets';
+import { useState } from 'react';
 
 export const Footer = ({ hideMarket = true }) => {
-  const [activeBox, setActiveBox] = useState("box");
+  const location = useLocation();
+  const activeBox = location.pathname;
 
   return (
     <footer>
       <Link
-        className={`box ${activeBox === "box" ? "active" : ""}`}
-        onClick={() => setActiveBox("box")}
+        className={`box tab-item ${activeBox === '/' ? 'active' : ''}`}
         to="/"
       >
         <svg
@@ -29,9 +29,10 @@ export const Footer = ({ hideMarket = true }) => {
         <span>Box</span>
       </Link>
       <Link
-        className={`box ${activeBox === "tasks" ? "active" : ""}`}
-        onClick={() => setActiveBox("tasks")}
-        to="/tasks-section" // Replace with the actual route
+        className={`box tab-item ${
+          activeBox === '/tasks-section' ? 'active' : ''
+        }`}
+        to="/tasks-section"
       >
         <svg
           width="24"
@@ -49,9 +50,8 @@ export const Footer = ({ hideMarket = true }) => {
       </Link>
       {hideMarket ? null : (
         <Link
-          className={`box ${activeBox === "market" ? "active" : ""}`}
-          onClick={() => setActiveBox("market")}
-          to="/market-section" // Replace with the actual route
+          className={`box ${activeBox === '/add-box' ? 'active' : ''}`}
+          to="/market-section"
         >
           <svg
             width="24"

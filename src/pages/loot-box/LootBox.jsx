@@ -5,6 +5,7 @@ import {
   ConnectWallet,
   ConectedWallet,
   NotFound,
+  Footer,
 } from '../../components';
 import './loot-box.scss';
 import { Button } from 'primereact/button';
@@ -71,6 +72,7 @@ export const LootBox = () => {
       />
       <ConectedWallet showModal={connectedWallet} />
       <NotFound toggleNotFound={toggleNotFound} showNotFound={showNotFound} />
+      <Footer />
     </>
   );
 };
