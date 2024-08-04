@@ -140,6 +140,7 @@ export const CreateBox = ({ showModal, handleShowAddedBox }) => {
                   <Card
                     key={index}
                     className={`card ${index >= 4 ? 'disabled' : ''}`}
+                    onClick={handleShareBox}
                   >
                     <div className="left-box">
                       <Badge severity="success"></Badge>
@@ -279,7 +280,7 @@ export const CreateBox = ({ showModal, handleShowAddedBox }) => {
             className="go-btn fixed-btn"
             label="Export xml "
             severity="help"
-            onClick={handleShareBox}
+            onClick={handleShowAddedBox}
           />
         </div>
       </div>
