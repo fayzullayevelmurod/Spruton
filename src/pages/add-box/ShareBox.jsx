@@ -109,7 +109,6 @@ export const ShareBox = ({ showModal, setShareBox }) => {
           </div>
         </div>
       </div>
-      <Footer hideMarket={false} />
     </>
   );
 };

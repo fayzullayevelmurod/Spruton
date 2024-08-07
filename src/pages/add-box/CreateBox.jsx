@@ -284,7 +284,6 @@ export const CreateBox = ({ showModal, handleShowAddedBox }) => {
           />
         </div>
       </div>
-      <Footer hideMarket={false} />
     </>
   );
 };

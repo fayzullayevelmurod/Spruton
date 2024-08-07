@@ -6,6 +6,7 @@ import { Select } from '../../components/Select';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { CreateBox } from './CreateBox';
+import { Footer } from '../../components';
 
 export const AddBox = () => {
   const [selectWeek, setSelectWeek] = useState(false);
@@ -319,6 +320,7 @@ export const AddBox = () => {
           onClick={handleShowAddedBox}
         />
       </div>
+      <Footer hideMarket={false} />
     </>
   );
 };
